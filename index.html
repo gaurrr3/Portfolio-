@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10091c">
+<meta name="description" content="A creative portfolio exploring bold ideas, motion and digital experiences.">
+<title>Creative Portfolio — Beyond the Ordinary</title>
+<style>
+:root{--bg:#10091c;--panel:#1b1030;--violet:#a879ff;--lav:#dac8ff;--ink:#f7f2ff;--muted:#b9accd;--line:rgba(224,203,255,.16)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5;overflow-x:hidden}a{color:inherit;text-decoration:none}button,a{-webkit-tap-highlight-color:transparent}::selection{background:var(--violet);color:#10091c}
+.wrap{width:min(1160px,calc(100% - 48px));margin:auto}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-size:13px;font-weight:800;letter-spacing:.17em;text-transform:uppercase}.navlinks{display:flex;gap:27px;color:var(--muted);font-size:12px}.navlinks a:hover,.textlink:hover{color:var(--lav)}.eyebrow{color:var(--lav);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700}.hero{min-height:690px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:20px;padding:70px 0 90px;position:relative}.hero:before{content:"";position:absolute;width:500px;height:500px;right:5%;top:80px;border-radius:50%;background:radial-gradient(circle,rgba(116,54,210,.2),transparent 68%);filter:blur(20px);pointer-events:none}.hero-copy{position:relative;z-index:2}.hero h1{font-size:clamp(52px,7.1vw,100px);line-height:.94;letter-spacing:-.075em;font-weight:650;margin:23px 0}.hero h1 em{font-style:normal;color:var(--lav)}.intro{max-width:430px;color:var(--muted);font-size:16px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 20px;border:1px solid var(--line);border-radius:100px;font-size:12px;font-weight:700;transition:transform .25s,background .25s}.btn:hover{transform:translateY(-3px)}.btn.primary{background:var(--lav);color:#1a0d2c;border-color:var(--lav)}.orb-stage{min-height:430px;display:grid;place-items:center;position:relative;perspective:900px}.orb{width:min(350px,70vw);aspect-ratio:1;border-radius:42% 58% 63% 37% / 42% 39% 61% 58%;position:relative;background:radial-gradient(ellipse at 28% 20%,#fff 0%,#e7d8ff 5%,#ad7bff 18%,#6735b5 38%,#27133f 65%,#120b20 79%);box-shadow:inset -28px -35px 55px #08050e,inset 18px 16px 28px rgba(255,255,255,.65),0 0 65px rgba(157,94,255,.28);animation:float 7s ease-in-out infinite;transform-style:preserve-3d}.orb:before{content:"";position:absolute;inset:11%;border:1px solid rgba(242,228,255,.55);border-radius:50%;transform:rotateX(65deg) rotateZ(-25deg) scaleY(.55);box-shadow:0 0 20px rgba(210,177,255,.35)}.orb:after{content:"";position:absolute;width:38%;height:38%;right:-9%;top:8%;border-radius:50%;background:radial-gradient(circle at 28% 25%,#fff,#d8baff 14%,#8e4be8 42%,#241037 72%);box-shadow:inset -12px -14px 20px #13091e,0 0 35px rgba(188,135,255,.4)}.ring{position:absolute;width:min(430px,84vw);aspect-ratio:1;border:1px solid rgba(204,169,255,.32);border-radius:50%;transform:rotateX(68deg) rotateZ(-25deg);animation:spin 22s linear infinite}.ring:after{content:"";position:absolute;width:12px;height:12px;border-radius:50%;background:#e7d5ff;box-shadow:0 0 22px #b88cff;top:12%;left:14%}.orb-caption{position:absolute;bottom:8px;right:0;color:var(--muted);font-size:10px;letter-spacing:.16em;text-transform:uppercase}.scroll-note{position:absolute;bottom:28px;left:0;color:var(--muted);font-size:10px;letter-spacing:.15em;text-transform:uppercase}
+section{padding:95px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:35px}.section-head h2{font-size:clamp(34px,5vw,62px);letter-spacing:-.06em;line-height:1;margin:12px 0 0}.section-head p{color:var(--muted);max-width:310px;font-size:13px;margin:0}.projects{display:grid;grid-template-columns:1.15fr .85fr;gap:20px}.project{border:1px solid var(--line);background:var(--panel);border-radius:18px;overflow:hidden;transition:transform .3s,border-color .3s}.project:hover{transform:translateY(-5px);border-color:rgba(202,165,255,.5)}.project:nth-child(2){margin-top:65px}.art{height:310px;display:grid;place-items:center;overflow:hidden;position:relative;background:radial-gradient(ellipse at 50% 60%,#482477,#201133 50%,#130c20 78%)}.project:nth-child(2) .art{background:radial-gradient(ellipse at 50% 45%,#69439a,#28163b 50%,#140d20 82%)}.art-shape{width:160px;height:190px;border-radius:52% 48% 35% 65%/45% 35% 65% 55%;background:linear-gradient(130deg,#f0e5ff,#a879ff 28%,#4d267f 62%,#150d22);box-shadow:inset -20px -25px 30px #160b24,inset 10px 10px 22px #fff8,0 0 60px #a879ff55;transform:rotate(22deg);animation:float 8s ease-in-out infinite}.project:nth-child(2) .art-shape{width:190px;height:140px;border-radius:50%;transform:rotate(-18deg);background:linear-gradient(140deg,#fff,#c6a4ff 20%,#7142b2 48%,#21112f 75%)}.project-info{padding:23px;display:flex;justify-content:space-between;gap:16px;align-items:start}.project-info h3{font-size:20px;letter-spacing:-.03em;margin:0 0 5px}.project-info p{color:var(--muted);font-size:12px;margin:0}.tag{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--lav);white-space:nowrap}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}.about-grid h2{font-size:clamp(34px,4.8vw,58px);line-height:1.02;letter-spacing:-.065em;margin:0}.about-copy{color:var(--muted);max-width:570px}.about-copy strong{color:var(--ink)}.services{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}.service{padding:25px 20px 25px 0;border-bottom:1px solid var(--line)}.service h3{margin:0 0 8px;font-size:16px}.service p{color:var(--muted);font-size:12px;margin:0;max-width:270px}.contact{padding:105px 0 115px;text-align:center;background:radial-gradient(ellipse at 50% 100%,#32164d 0,transparent 60%)}.contact h2{font-size:clamp(44px,8vw,92px);letter-spacing:-.075em;line-height:.95;margin:18px 0 25px}.contact p{color:var(--muted);margin:0 auto 25px;max-width:430px}.footer{border-top:1px solid var(--line);padding:24px 0;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:11px}.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}
+@keyframes float{0%,100%{translate:0 0;rotate:0deg}50%{translate:0 -14px;rotate:3deg}}@keyframes spin{to{transform:rotateX(68deg) rotateZ(335deg)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media(max-width:760px){.wrap{width:min(100% - 36px,560px)}.nav{height:70px}.navlinks{gap:13px;font-size:10px}.brand{font-size:11px}.hero{grid-template-columns:1fr;min-height:auto;padding:72px 0 64px;gap:8px}.hero h1{font-size:clamp(52px,14vw,82px)}.hero-copy{max-width:540px}.orb-stage{min-height:330px;grid-row:1}.orb{width:min(255px,63vw)}.ring{width:min(310px,78vw)}.orb-caption{bottom:0;right:8px}.scroll-note{display:none}section{padding:70px 0}.section-head{display:block}.section-head p{margin-top:16px}.projects{grid-template-columns:1fr}.project:nth-child(2){margin-top:0}.art{height:250px}.about-grid{grid-template-columns:1fr;gap:25px}.services{grid-template-columns:1fr}.service{padding:21px 0}.contact{padding:80px 0}.footer{flex-direction:column;gap:7px}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="#top">YOUR NAME <span style="color:var(--violet)">✳</span></a>
+  <nav class="navlinks" aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact ↗</a></nav>
+</header>
+<main id="top" class="wrap">
+  <section class="hero" style="border:0">
+    <div class="hero-copy">
+      <div class="eyebrow">Independent creative portfolio · 2026</div>
+      <h1>Ideas that move<br><em>beyond</em> ordinary.</h1>
+      <p class="intro">I create thoughtful digital experiences, visual stories and bold creative work for brands with something to say.</p>
+      <div class="actions"><a class="btn primary" href="#work">Explore selected work ↗</a><a class="btn" href="#contact">Let's collaborate</a></div>
+    </div>
+    <div class="orb-stage" aria-label="Animated abstract purple 3D-inspired sculpture">
+      <div class="ring"></div><div class="orb"></div><div class="orb-caption">Digital craft · Creative energy</div>
+    </div>
+    <div class="scroll-note">Scroll to explore ↓</div>
+  </section>
+  <section id="work">
+    <div class="section-head reveal"><div><div class="eyebrow">A selection</div><h2>Selected work<span style="color:var(--violet)">.</span></h2></div><p>A few spaces where strategy, visual storytelling and experimentation come together.</p></div>
+    <div class="projects">
+      <a class="project reveal" href="#contact"><div class="art"><div class="art-shape"></div></div><div class="project-info"><div><h3>Form in Motion</h3><p>Visual identity · Digital art direction</p></div><span class="tag">01 / Concept</span></div></a>
+      <a class="project reveal" href="#contact"><div class="art"><div class="art-shape"></div></div><div class="project-info"><div><h3>Soft Signal</h3><p>Campaign concept · Creative direction</p></div><span class="tag">02 / Concept</span></div></a>
+    </div>
+    <p style="color:var(--muted);font-size:11px;margin-top:18px">Concept placeholders — replace with your real projects, images and results before presenting this as client work.</p>
+  </section>
+  <section id="about">
+    <div class="about-grid reveal"><div><div class="eyebrow">A little about me</div><h2>Curious by nature.<br><span style="color:var(--lav)">Intentional by design.</span></h2></div><div class="about-copy"><p>I’m a creative professional drawn to ideas that feel distinctive, considered and alive. My work brings together visual storytelling, design thinking and a love of details.</p><p><strong>My approach:</strong> make it clear, make it memorable, and make every choice count. Replace this paragraph with your own story, strengths and experience.</p><a class="textlink" href="#contact">More about working together ↗</a></div></div>
+  </section>
+  <section id="services">
+    <div class="section-head reveal"><div><div class="eyebrow">What I can bring</div><h2>Ways to work together.</h2></div><p>Edit these service descriptions to match your real skills and offerings.</p></div>
+    <div class="services reveal">
+      <div class="service"><div class="eyebrow">01</div><h3>Creative direction</h3><p>Visual concepts and cohesive creative thinking from first idea to final frame.</p></div>
+      <div class="service"><div class="eyebrow">02</div><h3>Visual storytelling</h3><p>Content and imagery designed to catch attention and communicate with purpose.</p></div>
+      <div class="service"><div class="eyebrow">03</div><h3>Digital experiences</h3><p>Distinctive digital presentation, motion-led details and polished layouts.</p></div>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <div class="eyebrow">Have a good one in mind?</div><h2>Let's make<br><span style="color:var(--lav)">something matter.</span></h2>
+    <p>Open to thoughtful collaborations, interesting projects and conversations about creative work.</p>
+    <a class="btn primary" href="mailto:hello@example.com">Email me ↗</a>
+  </section>
+</main>
+<footer class="wrap footer"><span>© <span id="year"></span> YOUR NAME · Creative portfolio</span><span>Made with intention in purple.</span></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const items=document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}}),{threshold:.12});items.forEach(el=>obs.observe(el))}else{items.forEach(el=>el.classList.add('visible'))}
+</script>
+</body>
+</html>
